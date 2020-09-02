@@ -8,7 +8,6 @@ class Bob {
   private isSilence = (message: string): boolean => message.trim().length === 0;
 
   hey(greeting: string) {
-    const greetingArray = greeting.split(" ");
     if (this.isYelling(greeting) && this.isQuestion(greeting)) {
       return "Calm down, I know what I'm doing!";
     } else if (this.isQuestion(greeting)) {
